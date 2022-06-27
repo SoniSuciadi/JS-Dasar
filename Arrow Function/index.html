@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        // let mahasiswa = ['Soni Suciadi', 'Sherly Imelda', 'Jenny Putri N']
+        // dibuat menggunakan function biasa
+        // let jumlahHuruf = mahasiswa.map(function (nama) {
+        //     return nama.length
+        // })
+        // console.log(jumlahHuruf)
+        // dibuat menggunakan arrow functiom
+        // let jumlahHuruf=mahasiswa.map(nama=> nama.length)
+        // console.log(jumlahHuruf) // return dalam bentuk array isi panjang huruf
+
+        // let jumlahHuruf=mahasiswa.map(nama=> ({nama:nama, jumlahHuruf:nama.length}))
+        // console.log(jumlahHuruf)
+
+        // this pada arrow function
+        // object literal
+        // menggunakan function biasa
+        // let mhs={
+        //     nama:'Soni Suciadi',
+        //     umur:21,
+        //     sayHello:function(){
+        //         console.log(`Hellow ${this.nama} Anda Berumur ${this.umur}`)
+        //     }
+        // }
+        // menggunakan arrow function
+        let mhs = {
+            nama: 'Soni Suciadi',
+            umur: 21,
+            sayHello: () => {
+                console.log(`Hellow ${mhs.nama} Anda Berumur ${this.umur}`)
+                console.log(nama)
+            }
+        }
+    </script>
+</body>
+
+</html>

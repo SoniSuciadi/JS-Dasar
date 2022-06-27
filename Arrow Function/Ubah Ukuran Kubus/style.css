@@ -1,0 +1,16 @@
+.kubus {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: solid black;
+    transition: width 2s, height 4s;
+}
+
+.big {
+    width: 400px;
+    height: 400px;
+}
+
+.caption {
+    background-color: blueviolet;
+}

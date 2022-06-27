@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Ubah Ukuran</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body >
+        <div class="container" >
+            <div class="ubah1" style="display: inline-block;">
+                <div id="box1" class="box1" ></div>
+                <button  type="button" onclick="ubahwarna()" class="button" style="padding: 10px;">Ubah Warna</button>
+            </div>
+            <div class="ubah2" style="display: inline-block;">
+                <div id="box2" class="box2"></div>
+                <button type="button" class="button" onclick="ubahukuran()" style="padding: 10px;">Ubah Ukuran</button>
+            </div>
+            <div  class="ubah3" style="display: inline-block;">
+                <div id="box3" class="box3"></div>
+                <button type="button" onclick="ubahbingkai()" class="button" style="padding: 10px;">Ubah Bingkai</button>
+            </div>
+     
+        </div>
+        
+    </body>
+    <script>
+        function ubahwarna(){
+            if(String(document.getElementById("box1").style.getPropertyValue("background-color")) =="red"){
+                document.getElementById("box1").style.backgroundColor = "blue";
+            }else{
+                document.getElementById("box1").style.backgroundColor = "red";
+            }  
+        }
+        function ubahukuran(){
+            let box=document.getElementById("box2")
+            box.style.height=`${box.offsetHeight+1}`
+            box.style.width=`${box.offsetWidth+1}`
+        }
+        function ubahbingkai(){
+            
+            if(String(document.getElementById("box3").style.getPropertyValue("border")) =="solid"){
+                document.getElementById("box3").style.borderStyle = "none";
+            }else{
+                document.getElementById("box3").style.border = "solid";
+            }  
+        }
+    </script>
+</html>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Suit Jepang</title>
+</head>
+
+<body>
+    <script>
+        let pilih = prompt("Game suit jepang \nPilih Gunting Batu Kertas")
+        let pilihan = ["Gunting", "Batu", "Kertas"]
+        let random = Math.floor(Math.random() * pilihan.length)
+        let komputerPilih = pilihan[random]
+        if (pilih == "Gunting") {
+            if (komputerPilih == "Batu") {
+                alert("Maaf Anda Kalah, Komputer Memilih " + komputerPilih)
+            } else if (komputerPilih == "Kertas") {
+                alert("Selamat Anda Menang, Komputer Memilih " + komputerPilih)
+            } else {
+                alert("Petandingan Seri")
+            }
+
+        } else if (pilih == "Batu") {
+            if (komputerPilih == "Kertas") {
+                alert("Maaf Anda Kalah, Komputer Memilih " + komputerPilih)
+            } else if (komputerPilih == "Gunting") {
+                alert("Selamat Anda Menang, Komputer Memilih " + komputerPilih)
+            } else {
+                alert("Petandingan Seri")
+            }
+
+        } else if (pilih == "Kertas") {
+            if (komputerPilih == "Gunting") {
+                alert("Maaf Anda Kalah, Komputer Memilih " + komputerPilih)
+            } else if (komputerPilih == "Batu") {
+                alert("Selamat Anda Menang, Komputer Memilih " + komputerPilih)
+            } else {
+                alert("Petandingan Seri")
+            }
+
+        } else {
+            alert("Pilihanmu Tidak Valid")
+        }
+    </script>
+</body>
+
+</html>

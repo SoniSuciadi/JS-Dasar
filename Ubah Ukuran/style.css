@@ -1,0 +1,21 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 15px;
+    
+}
+.box2{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 255, 42);
+    border-radius: 15px;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 119, 0);
+    border-radius: 15px;
+    border:  solid ;
+    
+}

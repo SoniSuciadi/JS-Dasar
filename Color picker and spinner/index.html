@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="input-group mb-3">
+            <label class="input-group-text">KUBUS</label>
+            <select class="form-select select-kubus" id="select-kubus">
+                <option value="null" selected>Pilih kubus</option>
+                <option value="kubus1">Pertama</option>
+                <option value="kubus2">Kedua</option>
+                <option value="kubus3">Ketiga</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <select class="form-select select-object" id="select-object">
+                <option value="null"  selected>Pilih Object</option>
+                <option value="border-color">Border</option>
+                <option value="background-color">Isi</option>
+            </select>
+            <label class="input-group-text">EDIT</label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text">Warna</label>
+            <input class="select-color" style="height: 50px; width:85%;" type="color" id="color" name="favcolor"
+                value="#000000">
+        </div>
+        <div class="kubus1 p-3 m-3 " style="border: 10px solid;">
+            <h3 class="text-center">KUBUS 1</h3>
+        </div>
+        <div class="kubus2 p-3 m-3 " style="border: 10px solid; ">
+            <h3 class="text-center">KUBUS 2</h3>
+        </div>
+        <div class="kubus3 p-3 m-3" style="border: 10px solid; ">
+            <h3 class="text-center">KUBUS 3</h3>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-outline-primary btn-edit" type="button">Proses</button>
+
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="/script.js"></script>
+</body>
+
+</html>

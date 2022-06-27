@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Closure</title>
+</head>
+
+<body>
+    <script>
+        // function ucapkanSalam(waktu) {
+        //     return function (nama) {
+        //         return console.log(`halo ${nama} selamat ${waktu} Semoga Harimu Menyenangkan`)
+        //     }
+        // }
+        // let selamatpagi = ucapkanSalam(
+        //     'Pagi') // fungsi dijalankan setengan, argumen waktu menjadi closure sehingga argumen yang nanti di masukan akan masuk ke nama
+        // let selamatsiang = ucapkanSalam('Siang')
+        // let selamatmalam = ucapkanSalam('Malam')
+        // selamatpagi('Soni Suciadi')
+        // let add = function () {
+        //     let counter = 0;
+        //     return function () {
+        //         counter++
+        //         return counter
+        //     }
+        // }
+        // let jln=add()
+        // console.log(jln())
+        // console.log(jln())
+        // console.log(jln())
+        // console.log(jln())
+        // jika ingin menggunakan closure haru menyipan dulu retrun functionya di dalam sebua variable
+        // sesuai dengan berapa tingkat jumlahnya atau bisa di buat seperti ini:
+        let add = (function () {
+            let counter = 0;
+            return function () {
+                counter++
+                return counter
+            }
+        })()
+        
+        console.log(add())
+        console.log(add())
+        console.log(add())
+    </script>
+</body>
+
+</html>

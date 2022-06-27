@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+        // // cara pembuatan object
+        // let mhs = {
+        //     nama: 'Soni Suciadi',
+        //     npm: '1822240086',
+        //     lulus: true,
+        //     ips: [3.2, 3.4, 4, 4],
+        //     ipk: function () {
+        //         let ipk = 0
+        //         this.ips.forEach(function (item, index) {
+        //             ipk += item
+        //         })
+        //         return ipk
+        //     },
+        //     alamat: {
+        //         jalan: 'KH Azhari',
+        //         nomor: 229,
+        //         kel: '11 Ulu',
+        //         kec: 'Seberang Ulu II',
+        //         kota: 'Palembang'
+        //     }
+        // }
+        // // 1. Object Literal
+        // let dosen = {}
+        // dosen.nama = 'Dorrie'
+        // dosen.umur = 31
+        // dosen.alamat = {
+        //     jalan: 'KH Azhari',
+        //     nomor: 229,
+        //     kel: '11 Ulu',
+        //     kec: 'Seberang Ulu II',
+        //     kota: 'Palembang'
+        // }
+        // // 2. Function Declaration
+        // function bikinObject(nama, umur, jurusan, kota) {
+        //     let mhs = {}
+        //     mhs.nama = nama
+        //     mhs.umur = umur
+        //     mhs.jurusan = jurusan
+        //     mhs.kota = kota
+        //     return mhs;
+        // }
+        // // cara memanggil
+        // let mahasiswa = bikinObject("xxxxxx", 'xxxxxxxx', 'xxxxxxxx', 'xxxxxx')
+        // // 3. Constructor
+        // function Mahasiswa(nama, umur, jurusan, kota) {
+        //     this.nama = nama
+        //     this.umur = umur
+        //     this.jurusan = jurusan
+        //     this.kota = kota
+        // }
+        // // cara memanggil
+        // let mahasiswi = new Mahasiswa('zzzzzz', 'xxxxxxxx', 'zzzzzzz', 'zzzzz')
+        // // 4. Object.create
+        // const methodMahasiswa = {
+        //     makan: function (porsi) {
+        //         this.energi += porsi
+        //     },
+        //     main: function (jam) {
+        //         this.energi += jam
+        //     },
+        //     tidur: function (jam) {
+        //         this.energi += jam * 2
+        //     }
+        // }
+
+        // function mahasiswa(nama, energi) {
+        // Object.create (berfungsi intuk memasukan methot yang akan digunakan )
+        //     let mhs = Object.create(methodMahasiswa)
+        //     mhs.nama = nama
+        //     mhs.energi = energi
+        //     return mhs
+        // }
+        // let soni = mahasiswa('Soni Suciadi', 10)
+        // latihan
+        // function Angkot(sopir, trayek, penumpang, kas) {
+        //     this.sopir = sopir;
+        //     this.trayek = trayek;
+        //     this.penumpang = penumpang;
+        //     this.kas = kas
+        //     this.penumpangNaik = function tambahPenumpang(nama) {
+        //         this.penumpang.push(nama)
+
+        //     }
+        //     this.hapusPenmumpang = function hapusPenmumpang(nama, angkot) {
+        //         let i = this.penumpang.indexOf(nama)
+        //         this.penumpang.splice(i, 1)
+        //         this.kas += 2000
+        //     }
+        // }
+
+        // let angkot1 = new Angkot('Soni Suciadi', ['Plaju', 'Ampera'], [], 0)
+
+        // construktor fungsion
+        // function Mahasiswa(nama, energi) {
+        //     this.nama = nama;
+        //     this.energi = energi;
+        //     this.makan = function (porsi) {
+        //         this.energi += porsi
+        //         console.log(`Selamat makan ${nama} !!!`)
+        //     };
+        //     this.main = function (jam) {
+        //         this.energi -= jam
+        //         console.log(`Selamat Bermain ${nama}`)
+        //     }
+        // }
+        
+    </script>
+</body>
+
+</html>

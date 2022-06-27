@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Angkot</title>
+</head>
+
+<body>
+    <script>
+        let angkot = ['soni', undefined, 'ria']
+
+        function tambahPenumpang(nama) {
+
+            if (angkot.length == 0) {
+                angkot.push(nama)
+            } else {
+                for (let i = 0; i < angkot.length; i++) {
+                    if (angkot[i] == nama) {
+                        console.log(`Penumpang Atas Nama ${nama} Sudah ada dalam bus`)
+                        break
+                    } else if (angkot[i] == undefined) {
+                        angkot[i] = nama
+                        break
+                    } else if (i == angkot.length - 1) {
+                        angkot.push(nama)
+                    }
+                }
+            }
+            return angkot;
+        }
+
+        function hapusPenumpang(nama) {
+            if (angkot.length == 0) {
+                console.log('Angkot Kosong')
+
+            } else {
+                for (let i = 0; i < angkot.length; i++) {
+                    if (nama == angkot[i]) {
+                        angkot[i] = undefined
+                        break
+                    } else if (i == angkot.length - 1) {
+                        console.log('Tidak Ada Penumpang dengan nama ' + nama)
+                    }
+                }
+
+            }
+            return angkot
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>Array</title>
+</head>
+
+<body>
+  <script>
+    // 1. legth digunakan untuk menghitung banyak elemet array
+    // let  mhs=['soni','sherly','ria','leo']
+    // console.log(mhs.length)
+
+    // 2. join digunakan untuk menghilangkan format array dan menjadikannya string
+    // let  mhs=['soni','sherly','ria','leo']
+    // console.log(mhs.join(' - ')) // dapat di isi separator - , . \n
+
+    // 3. push digunakan untuk menambahkan element array dari indeks paling akhir
+    // let  mhs=['soni','sherly','ria','leo']
+    // mhs.push('melik') // bisa langsung di tambahkan banyak element
+
+    // 4. pop digunakan untuk menghapus element terakir pada array
+    // let  mhs=['soni','sherly','ria','leo']
+    // mhs.pop()
+
+    // 5. shift digunakan untuk menghapus element array paling awal
+    // let  mhs=['soni','sherly','ria','leo']
+    // mhs.shift()
+
+    // 6. unshift digunakan untuk menambahkan element baru array pada indeks awal / paling pertama
+    // let  mhs=['soni','sherly','ria','leo']
+    // mhs.unshift('dika')
+
+    // 7. splice digunakan untuk melakukan penghapusan maupun penyisipan element pada array
+    // let  mhs=['soni','sherly','ria','leo']
+    // penghapusan
+    // mhs.splice(2,1) // menghapus element array dari baris ke 2 sebanyak 1 element
+    // penyisipan
+    // mhs.splice(2,0,"dikii") // menambahkan element diki sesudah indeks ke 2
+
+    // 8. slice melakukan pemotongan pada array dan menjadikannya array baru
+    // let  mhs=['soni','sherly','ria','leo']
+    // let mhsBaru=mhs.slice(2,4) //membuat array baru mulai dari indeks ke 2 hingga indeks ke 3
+
+    // 9. forEach melakukan perulangan terhadap tiap element pada array tanpa menjadikannya array baru
+    // let mhs=['soni','sherly','ria','leo']
+    // mhs.forEach(function(e,i){
+    // console.log(`Mahasiswa ke-${i+1} adalah ${e}`)
+    // })
+
+    // 10. map melakukan pemetaan pada tiap element array dan menjadikannya sebuah array baru
+    // let angka = [1, 2, 3, 4, 2, 1, 3, 4, 5, 23]
+    // let angkaXdua = angka.map(function (e) {
+    //   return e * 2
+    // })
+
+    // 11. sort mengurutkan isi array 
+    // let angka = [1, 2, 3, 4, 2, 1, 3, 4, 5, 23]
+    // let urut = angka.sort(function (a, b) {
+    //   return a - b
+    // })
+
+    // 12. filter melakukan penfilteran terhadap isi array dan menjadikannya array baru
+    // let angka = [1, 2, 3, 4, 2, 1, 3, 4, 5, 23]
+    // let saring = angka.filter(function (e) {
+    //   return e > 3
+    // })
+
+    // 13. find melakukan pencarian terhadap element pada array tetapi hanya mengembalikan 1 nilai saja
+    // let angka = [1, 2, 3, 4, 2, 1, 3, 4, 5, 23]
+    // let cari = angka.find(function (e) {
+    // return e = 9
+    // })
+  </script>
+</body>
+
+</html>
